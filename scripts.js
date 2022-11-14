@@ -9,6 +9,7 @@ const pokeData = async() =>{
     if (response.status == 404) {
         document.getElementById("update_name").innerText = "What is this?!?!"
         document.getElementById("update_img").setAttribute('src', "./assets/MissingNo.png")
+        document.getElementById("update_location").innerText = "Unknown"
     }
     const pokemon = await response.json()
     console.log(pokemon)
